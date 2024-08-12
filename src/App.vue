@@ -1,15 +1,14 @@
 <template>
-  <router-link to="/">Inicio</router-link>
-  <router-link to="/about">Acerca de</router-link>
-  <router-link to="/services">Servicios</router-link>
-  <router-view></router-view>
+  <NavComposition/>
 
-  <h1>Listado de post</h1>
-  <PostContainer/>
+  <router-view></router-view>
+  
+  <FooterComponent/>
 </template>
 
 <script setup>
-import PostContainer from './components/PostContainer.vue';
+import FooterComponent from './components/FooterComponent.vue';
+import NavComposition from './components/NavComposition.vue';
 </script>
 
 <style scoped>
